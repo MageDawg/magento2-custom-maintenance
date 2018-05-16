@@ -13,22 +13,42 @@
     <link rel="icon" href="<?php echo $block->defaultsUrl('images/favicon.ico'); ?>" type="image/x-icon"/>
     <link rel="shortcut icon" href="<?php echo $block->defaultsUrl('images/favicon.ico'); ?>" type="image/x-icon"/>
     <script src="<?php echo $block->defaultsUrl('js/countdown.js') ?>"></script>
+    <style>
+        body {
+            background-color: <?php echo $block->getFooterAndHeaderBackgroundColor(); ?>;
+        }
+
+        .main-container {
+            background-color: <?php echo $block->getSideColor(); ?>;
+        }
+
+        .main {
+            background-color: <?php echo $block->getBackgroundColor(); ?>
+        }
+
+        .copyright {
+            color: <?php echo $block->getCopyrightFontColor(); ?>
+        }
+    </style>
 </head>
-<body <?php if ($block->getFooterAndHeaderBackgroundColor()): ?><?php echo "style=" . "\"background:" . $block->getFooterAndHeaderBackgroundColor() . "\"" ?><?php endif; ?>>
+<body>
 <div class="wrapper">
     <div class="page">
         <div class="header-container">
             <div class="header">
             </div>
         </div>
-        <div class="main-container" <?php if ($block->getSideBackgroundColor()): ?><?php echo "style=" . "\"background:" . $block->getSideBackgroundColor() . "\"" ?><?php endif; ?>>
-            <div class="main col1-layout" <?php if ($block->getBackgroundColor()): ?><?php echo "style=" . "\"background:" . $block->getBackgroundColor() . "\"" ?><?php endif; ?>>
+        <div class="main-container">
+            <div class="main col1-layout">
                 <div id="main" class="col-main">
                     <div class="logo-container">
                         <?php if ($block->getLogo()): ?>
-                            <a href="<?php echo $block->url('/'); ?>" title="Magento Commerce" class="logo"><img
-                                        src="<?php echo $block->defaultsUrl('images/'); ?><?php echo $block->getLogo() ?>"
-                                        alt="Magento Commerce"/></a>
+                            <a href="<?php echo $block->url('/'); ?>" title="Magento Commerce" class="logo">
+                                <img
+                                    src="<?php echo $block->defaultsUrl('images/'); ?><?php echo $block->getLogo() ?>"
+                                    alt="Magento Commerce"
+                                />
+                            </a>
                         <?php endif; ?>
                     </div>
                     <?php if ($block->getTitle()): ?>
@@ -103,13 +123,13 @@
                     </ul>
                 </div>
                 <?php if ($block->getCopyright()): ?>
-                    <address
-                            class="copyright" <?php if ($block->getCopyrightFontColor()): ?><?php echo "style=" . "\"color:" . $block->getCopyrightFontColor() . "\"" ?><?php endif; ?>><?php echo $block->getCopyright() ?></address>
+                    <address class="copyright">
+                        <?php echo $block->getCopyright() ?>
+                    </address>
                 <?php endif; ?>
             </div>
         </div>
     </div>
 </div>
-
 </body>
 </html>
