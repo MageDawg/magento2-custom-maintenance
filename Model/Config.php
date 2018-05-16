@@ -1,12 +1,12 @@
 <?php
 /**
- * @category       Creatuity
+ * @category       MageDawg
  * @package        Magento 2 Custom Maintenance
- * @copyright      Copyright (c) 2008-2017 Creatuity Corp. (http://www.creatuity.com)
- * @license        http://creatuity.com/license/
+ * @copyright      Copyright (c) 2018 MageDawg
+ * @license        http://opensource.org/licenses/osl-3.0.php
  */
 
-namespace Creatuity\CustomMaintenance\Model;
+namespace MageDawg\CustomMaintenance\Model;
 
 use Magento\Framework\App\Config\ScopeConfigInterface;
 use Magento\Store\Model\ScopeInterface;
@@ -163,6 +163,6 @@ class Config
 
     protected function config($code)
     {
-        return $this->scopeConfig->getValue("creatuity_custommaintenance/{$code}", ScopeInterface::SCOPE_STORE, $this->storeId);
+        return $this->scopeConfig->getValue("magedawg_custommaintenance/{$code}", ScopeInterface::SCOPE_STORE, $this->storeId);
     }
 }

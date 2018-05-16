@@ -1,12 +1,12 @@
 <?php
 
-namespace Creatuity\CustomMaintenance\Model;
+namespace MageDawg\CustomMaintenance\Model;
 
 /**
- * @category       Creatuity
+ * @category       MageDawg
  * @package        Magento 2 Custom Maintenance
- * @copyright      Copyright (c) 2008-2017 Creatuity Corp. (http://www.creatuity.com)
- * @license        http://creatuity.com/license/
+ * @copyright      Copyright (c) 2018 MageDawg
+ * @license        http://opensource.org/licenses/osl-3.0.php
  */
 class MaintenanceException extends \Exception
 {

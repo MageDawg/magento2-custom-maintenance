@@ -1,6 +1,6 @@
 <?php
 
-namespace Creatuity\CustomMaintenance\Block\Adminhtml\System\Config\Form\Preview;
+namespace MageDawg\CustomMaintenance\Block\Adminhtml\System\Config\Form\Preview;
 
 class Button extends \Magento\Config\Block\System\Config\Form\Field
 {

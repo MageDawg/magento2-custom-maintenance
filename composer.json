@@ -1,11 +1,11 @@
 {
-    "name": "creatuity/magento2-custom-maintenance",
-    "description": "Creatuity Custom Maintenance for Magento 2",
+    "name": "magedawg/magento2-custom-maintenance",
+    "description": "MageDawg Custom Maintenance for Magento 2",
     "type": "magento2-component",
     "authors": [
         {
-            "name": "Creatuity Corp",
-            "homepage": "http://creatuity.com/"
+            "name": "MageDawg",
+            "email": "magedawg@gmail.com"
         }
     ],
     "require": {
@@ -17,15 +17,15 @@
             "registration.php"
         ],
         "psr-4": {
-            "Creatuity\\CustomMaintenance\\": ""
+            "MageDawg\\CustomMaintenance\\": ""
         }
     },
     "minimum-stability": "stable",
     "extra": {
         "map": [
             [
-                "pub/errors/creatuity_maintenance",
-                "pub/errors/creatuity_maintenance"
+                "pub/errors/magedawg_maintenance",
+                "pub/errors/magedawg_maintenance"
             ]
         ]
     }

@@ -1,12 +1,12 @@
 <?php
 /**
- * @category       Creatuity
+ * @category       MageDawg
  * @package        Magento 2 Custom Maintenance
- * @copyright      Copyright (c) 2008-2017 Creatuity Corp. (http://www.creatuity.com)
- * @license        http://creatuity.com/license/
+ * @copyright      Copyright (c) 2018 MageDawg
+ * @license        http://opensource.org/licenses/osl-3.0.php
  */
 
-namespace Creatuity\CustomMaintenance\Model\Maintenance\Observer;
+namespace MageDawg\CustomMaintenance\Model\Maintenance\Observer;
 
 use Magento\Framework\Event\Observer;
 use Magento\Framework\Event\ObserverInterface;

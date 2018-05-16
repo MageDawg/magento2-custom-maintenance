@@ -44,7 +44,7 @@
 //
 // -----------------------------------------
 
-var CountdownImageFolder = "errors/maintanance_creatuity_default/images/"; // Should have trailing slash.
+var CountdownImageFolder = "errors/maintanance_magedawg_default/images/"; // Should have trailing slash.
 // NOTE: The countdown script assumes the folder is relative to the countdown.js script file.
 // When CountdownImageFolder starts with a slash "/", or "http" the script will not assume the 
 // folder is relative to the script and you can hard-code another folder on your site.

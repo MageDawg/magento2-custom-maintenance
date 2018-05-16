@@ -1,14 +1,14 @@
 <?php
 /**
- * @category       Creatuity
+ * @category       MageDawg
  * @package        Magento 2 Custom Maintenance
- * @copyright      Copyright (c) 2008-2017 Creatuity Corp. (http://www.creatuity.com)
- * @license        http://creatuity.com/license/
+ * @copyright      Copyright (c) 2018 MageDawg
+ * @license        http://opensource.org/licenses/osl-3.0.php
  */
 
-namespace Creatuity\CustomMaintenance\Block\Adminhtml\Maintenance;
+namespace MageDawg\CustomMaintenance\Block\Adminhtml\Maintenance;
 
-use Creatuity\CustomMaintenance\Model\Config;
+use MageDawg\CustomMaintenance\Model\Config;
 use Magento\Framework\View\Element\Template;
 use Magento\Framework\View\Element\Template\Context;
 
@@ -19,7 +19,7 @@ class Page extends Template
 
     public function __construct(Config $configModel, Context $context, array $data = [])
     {
-        $this->setTemplate('Creatuity_CustomMaintenance::maintenance_page.phtml');
+        $this->setTemplate('MageDawg_CustomMaintenance::maintenance_page.phtml');
         $this->configModel = $configModel;
         $this->configModel->setStoreId($data['store_id']);
 
@@ -158,12 +158,12 @@ class Page extends Template
 
     public function internalUrl($path, array $params = [])
     {
-        return $this->url("pub/errors/creatuity_maintenance/{$path}", $params);
+        return $this->url("pub/errors/magedawg_maintenance/{$path}", $params);
     }
 
     public function defaultsUrl($path, array $params = [])
     {
-        return $this->url("pub/errors/creatuity_maintenance/maintenance_creatuity_default/{$path}", $params);
+        return $this->url("pub/errors/magedawg_maintenance/maintenance_magedawg_default/{$path}", $params);
     }
 
     public function url($path, array $params = [])

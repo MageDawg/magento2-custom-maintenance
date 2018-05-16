@@ -1,12 +1,12 @@
 <?php
 /**
- * @category       Creatuity
+ * @category       MageDawg
  * @package        Magento 2 Custom Maintenance
- * @copyright      Copyright (c) 2008-2017 Creatuity Corp. (http://www.creatuity.com)
- * @license        http://creatuity.com/license/
+ * @copyright      Copyright (c) 2018 MageDawg
+ * @license        http://opensource.org/licenses/osl-3.0.php
  */
 
-namespace Creatuity\Error;
+namespace MageDawg\Error;
 
 use Magento\Framework\App\Request\Http as Request;
 use Magento\Framework\App\Response\Http as Response;
@@ -20,7 +20,7 @@ class Processor extends BaseProcessor
     const REQUEST_COUNTDOWN = 'countdown';
     const REQUEST_CORE = 'core';
 
-    protected $template = 'Creatuity_CustomMaintenance::maintenance_page.phtml';
+    protected $template = 'MageDawg_CustomMaintenance::maintenance_page.phtml';
     protected $countdownConfigFile = BP . '/var/.maintenance.flag';
 
     protected $magentoConfig;
@@ -41,7 +41,7 @@ class Processor extends BaseProcessor
 
         $this->_response = $response;
         $this->logger = $logger;
-        $this->requestType = $request->has('creatuity_maintenance_countdown_data')
+        $this->requestType = $request->has('magedawg_maintenance_countdown_data')
             ? self::REQUEST_COUNTDOWN
             : self::REQUEST_MAINTENANCE;
     }
@@ -218,6 +218,6 @@ class Processor extends BaseProcessor
 
     protected function logError($error)
     {
-        $this->logger->critical('Creatuity Custom Maintenance Error: ' . $error);
+        $this->logger->critical('MageDawg Custom Maintenance Error: ' . $error);
     }
 }

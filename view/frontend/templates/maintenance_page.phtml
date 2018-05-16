@@ -1,4 +1,4 @@
-<?php /* @var $block \Creatuity\CustomMaintenance\Block\Adminhtml\Maintenance\Page */ ?>
+<?php /* @var $block \MageDawg\CustomMaintenance\Block\Adminhtml\Maintenance\Page */ ?>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
     <title><?php echo $block->getTitle() ?></title>
@@ -40,7 +40,7 @@
                         <p <?php if ($block->getNotificationFontColor()): ?><?php echo "style=" . "\"color:" . $block->getNotificationFontColor() . "\"" ?><?php endif; ?>><?php echo $block->getNotification() ?></p>
                     <?php endif; ?>
                     <div class="counter<?php if ($block->isCounterAnimationEnabled()): ?><?php echo ' animation' ?><?php endif; ?>">
-                        <script src="<?php echo $block->url('/', ['creatuity_maintenance_countdown_data' => '1',]); ?>"
+                        <script src="<?php echo $block->url('/', ['magedawg_maintenance_countdown_data' => '1',]); ?>"
                                 type="text/javascript"></script>
                     </div>
                     <?php if ($block->getEmail()): ?>

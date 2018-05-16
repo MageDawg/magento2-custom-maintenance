@@ -1,14 +1,14 @@
 <?php
 /**
- * @category       Creatuity
+ * @category       MageDawg
  * @package        Magento 2 Custom Maintenance
- * @copyright      Copyright (c) 2008-2017 Creatuity Corp. (http://www.creatuity.com)
- * @license        http://creatuity.com/license/
+ * @copyright      Copyright (c) 2018 MageDawg
+ * @license        http://opensource.org/licenses/osl-3.0.php
  */
 
-namespace Creatuity\CustomMaintenance\Model\Adminhtml\Error;
+namespace MageDawg\CustomMaintenance\Model\Adminhtml\Error;
 
-use Creatuity\CustomMaintenance\Model\MaintenanceException;
+use MageDawg\CustomMaintenance\Model\MaintenanceException;
 use Magento\Framework\App\State;
 use Magento\Framework\Message\ManagerInterface;
 use Psr\Log\LoggerInterface;

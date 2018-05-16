@@ -1,9 +1,9 @@
 <?php
 
-namespace Creatuity\CustomMaintenance\Controller\Adminhtml;
+namespace MageDawg\CustomMaintenance\Controller\Adminhtml;
 
-use Creatuity\CustomMaintenance\Model\Adminhtml\Error\Handler;
-use Creatuity\CustomMaintenance\Model\Maintenance;
+use MageDawg\CustomMaintenance\Model\Adminhtml\Error\Handler;
+use MageDawg\CustomMaintenance\Model\Maintenance;
 use Magento\Backend\App\Action;
 use Magento\Backend\App\Action\Context;
 use Magento\Framework\Controller\Result\RawFactory;
@@ -11,10 +11,10 @@ use Magento\Framework\Message\ManagerInterface;
 use Magento\Framework\View\Element\BlockFactory;
 
 /**
- * @category       Creatuity
+ * @category       MageDawg
  * @package        Magento 2 Custom Maintenance
- * @copyright      Copyright (c) 2008-2017 Creatuity Corp. (http://www.creatuity.com)
- * @license        http://creatuity.com/license/
+ * @copyright      Copyright (c) 2018 MageDawg
+ * @license        http://magedawg.com/license/
  */
 abstract class AbstractAction extends Action
 {

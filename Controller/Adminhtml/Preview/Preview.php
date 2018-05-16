@@ -1,15 +1,15 @@
 <?php
 /**
- * @category       Creatuity
+ * @category       MageDawg
  * @package        Magento 2 Custom Maintenance
- * @copyright      Copyright (c) 2008-2017 Creatuity Corp. (http://www.creatuity.com)
- * @license        http://creatuity.com/license/
+ * @copyright      Copyright (c) 2018 MageDawg
+ * @license        http://magedawg.com/license/
  */
 
-namespace Creatuity\CustomMaintenance\Controller\Adminhtml\Preview;
+namespace MageDawg\CustomMaintenance\Controller\Adminhtml\Preview;
 
-use Creatuity\CustomMaintenance\Controller\Adminhtml\AbstractAction;
-use Creatuity\CustomMaintenance\Block\Adminhtml\Maintenance\Page as MaintenancePage;
+use MageDawg\CustomMaintenance\Controller\Adminhtml\AbstractAction;
+use MageDawg\CustomMaintenance\Block\Adminhtml\Maintenance\Page as MaintenancePage;
 
 class Preview extends AbstractAction
 {

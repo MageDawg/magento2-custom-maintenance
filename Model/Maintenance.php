@@ -1,6 +1,6 @@
 <?php
 
-namespace Creatuity\CustomMaintenance\Model;
+namespace MageDawg\CustomMaintenance\Model;
 
 use Magento\Framework\App\Filesystem\DirectoryList;
 use Magento\Framework\Filesystem;
@@ -9,18 +9,18 @@ use Magento\Framework\View\Element\BlockFactory;
 use Magento\Store\Model\StoreManagerInterface;
 
 /**
- * @category       Creatuity
+ * @category       MageDawg
  * @package        Magento 2 Custom Maintenance
- * @copyright      Copyright (c) 2008-2017 Creatuity Corp. (http://www.creatuity.com)
- * @license        http://creatuity.com/license/
+ * @copyright      Copyright (c) 2018 MageDawg
+ * @license        http://opensource.org/licenses/osl-3.0.php
  */
 class Maintenance
 {
     /** @var string */
-    protected $template = 'Creatuity_CustomMaintenance::maintenance_page.phtml';
+    protected $template = 'MageDawg_CustomMaintenance::maintenance_page.phtml';
 
     /** @var string */
-    protected $baseDir = 'pub/errors/creatuity_maintenance/';
+    protected $baseDir = 'pub/errors/magedawg_maintenance/';
 
     /** @var StoreManagerInterface */
     protected $storeManager;
@@ -35,7 +35,7 @@ class Maintenance
         StoreManagerInterface $storeManager,
         Filesystem $filesystem,
         BlockFactory $blockFactory,
-        $baseDir = 'pub/errors/creatuity_maintenance/'
+        $baseDir = 'pub/errors/magedawg_maintenance/'
     ) {
         $this->storeManager = $storeManager;
         $this->blockFactory = $blockFactory;
@@ -73,7 +73,7 @@ class Maintenance
     protected function generateTemplate($store)
     {
         return $this->blockFactory
-            ->createBlock('Creatuity\CustomMaintenance\Block\Adminhtml\Maintenance\Page', [
+            ->createBlock('MageDawg\CustomMaintenance\Block\Adminhtml\Maintenance\Page', [
                 'data' => [
                     'store_id' => $this->toStoreId($store),
                     'area' => 'frontend',

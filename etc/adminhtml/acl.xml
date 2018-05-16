@@ -7,7 +7,7 @@
                 <resource id="Magento_Backend::stores">
                     <resource id="Magento_Backend::stores_settings">
                         <resource id="Magento_Config::config">
-                            <resource id="Creatuity_CustomMaintenance::configuration" title="Custom Maintenance" sortOrder="80" />
+                            <resource id="MageDawg_CustomMaintenance::configuration" title="Custom Maintenance" sortOrder="80" />
                         </resource>
                     </resource>
                 </resource>

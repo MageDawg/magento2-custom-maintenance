@@ -1,14 +1,14 @@
 <?php
 /**
- * @category       Creatuity
+ * @category       MageDawg
  * @package        Magento 2 Custom Maintenance
- * @copyright      Copyright (c) 2008-2017 Creatuity Corp. (http://www.creatuity.com)
- * @license        http://creatuity.com/license/
+ * @copyright      Copyright (c) 2018 MageDawg
+ * @license        http://magedawg.com/license/
  */
 
-namespace Creatuity\CustomMaintenance\Controller\Adminhtml\Rebuild;
+namespace MageDawg\CustomMaintenance\Controller\Adminhtml\Rebuild;
 
-use Creatuity\CustomMaintenance\Controller\Adminhtml\AbstractAction;
+use MageDawg\CustomMaintenance\Controller\Adminhtml\AbstractAction;
 
 class Rebuild extends AbstractAction
 {
